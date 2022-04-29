@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import AppHeader from "./components/AppHeader/AppHeader";
+import RiceComponent from "./components/RiceComponent/RiceComponent";
+import StartComponent from "./components/StartComponent/StartComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppHeader />
+      <div className="main-content">
+        <Routes>
+          <Route path="" element={<StartComponent />} />
+          <Route path="meal" element={<RiceComponent />} />
+          <Route path="meal/curry" element={<div>Curry Page</div>} />
+          <Route
+            path="meal/curry/done"
+            element={<div>Order complete Page</div>}
+          />
+          <Route path="*" element={<div>No such route</div>} />
+        </Routes>
+      </div>
     </div>
   );
 }

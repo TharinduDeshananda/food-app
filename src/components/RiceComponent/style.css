@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300&family=Sora:wght@100;200;300&display=swap");
+
+.rice-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rice-comp-title {
+  text-align: center;
+  font-size: 32px;
+  /* text-transform: capitalize; */
+  letter-spacing: 2px;
+}
+
+.rice-menu {
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rice-item {
+  transform: translateX(50px);
+  text-transform: lowercase;
+}
