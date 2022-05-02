@@ -20,7 +20,7 @@ const CurryComponent = () => {
 
   const handleNext = useCallback(() => {
     console.log("handleNext invoked");
-    dispatch({ type: "ADD_CURRIES", payload: curries });
+    dispatch({ type: "SET_CURRIES", payload: curries });
   }, [curries]);
   return (
     <div className="curry-comp">
