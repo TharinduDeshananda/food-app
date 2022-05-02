@@ -1,3 +1,8 @@
+const initState = {
+  meal: "no meal",
+  curries: [],
+};
+
 const foodReducer = (state, action) => {
   switch (action.type) {
     case "SET_MEAL":
@@ -24,6 +29,9 @@ const foodReducer = (state, action) => {
       );
       console.log("after state: ", state.curries);
       return { ...state };
+
+    case "CLEAR":
+      return initState;
     default:
       return state;
   }

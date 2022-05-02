@@ -1,0 +1,29 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 300px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.main-order-button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main-order-button:hover {
+  background-color: white;
+  color: purple;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: clamp(400px, 800px, 90%);
+
+  padding: 40px 0px;
+}
+
+.summary-title {
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
+.summary-descr {
+  padding: 40px 20px;
+}
+
+.summary-descr > h3 {
+  margin: 20px 0px;
+}
+
+.summary-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  color: black;
+  justify-content: space-around;
+}
+
+.summary-button {
+  background-color: transparent;
+  border: 1px ridge lawngreen;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.summary-button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
